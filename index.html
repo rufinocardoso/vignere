@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cifra de Vignere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png?1">
+    <script src="script.js"></script>
+
+  </head>
+  <style>
+  
+  </style>
+  <body>
+    <H1>Cifra de Vignere</H1>
+    <td>
+      <form name=form>
+
+              <label>Palavra</label>
+        <input name=input placeholder="Digite sua mensagem">
+        <button type=button onClick="this.form.input.value='';" value="Limpar">Limpar</button><br>
+
+
+              <label>chave</label>
+        <input placeholder="Qual a sua chave" name=key rows=5 cols=60 wrap=virtual>
+        <button type=button onClick="this.form.input.value='';" value="Limpar">Limpar</button>
+ 
+        <div><br>
+        <button type=button value="encode" onClick="runcoder (true);">Criptografar</button>
+        <button type=button value="decode" onClick="runcoder (false);">Descriptografar</button>
+        </div>
+            <br><br>
+
+            
+        
+        <div class="resultado top">
+          <div class="monitor">
+            <div class="screen">
+              <p>
+              <div >
+                <textarea name=output rows=10 cols=60 wrap=virtual></textarea>
+              </div>
+
+
+            </div>
+            <div class="monitor-name">CRIPITOGRAFIA DE VIGNERE<Span id="total"></Span></div>
+            <div class="light"></div>
+          </div>
+
+        </div>
+
+        </div></br>
+        <button type=button onClick="this.form.output.value='';" value="Limpar">Limpar</button>
+
+        <div class="license">
+          BY <a href="https://www.instagram.com/diego._.cardoso/"><img src="images/Capturar.PNG" alt="Descrição da imagem" /></a>
+        </div>
+
+      </form>
+  </body>
+</html>
+
